@@ -8,14 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: IconHeader(
-          icon: Icons.accessibility_new,
-          titulo: 'People',
-          subtitulo: 'subtitulo',
-          color1: Colors.red,
-          color2: Colors.blue,
-          elementsColor: Colors.yellow,
-        )
+        body: HeaderFondoRectangulos()
    ),
     );
   }

@@ -581,3 +581,82 @@ class _IconHeaderBackground extends StatelessWidget {
   }
 }
 
+class HeaderFondoRectangulos extends StatelessWidget {
+
+  final Color color;
+
+  const HeaderFondoRectangulos({
+    Key key,
+    this.color = Colors.blue
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+
+    final screenSize = MediaQuery.of(context).size;
+
+    return Stack(
+      children: [
+        Positioned(
+          top: screenSize.height * 0.05,
+          right: screenSize.width * 0.18,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.5), heigh: screenSize.width * 0.3, width: screenSize.width * 0.24 )
+        ),
+        Positioned(
+          top: screenSize.height * 0.1,
+          right: screenSize.width * 0.35,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.8), heigh: screenSize.width * 0.24, width: screenSize.width * 0.4 )
+        ),
+        Positioned(
+          bottom: -screenSize.height * 0.05,
+          right: screenSize.width * 0.18,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.5), heigh: screenSize.width * 0.3, width: screenSize.width * 0.24 )
+        ),
+        Positioned(
+          bottom: screenSize.height * 0.15,
+          left: -screenSize.width * 0.1,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.6), heigh: screenSize.width * 0.4, width: screenSize.width * 0.4 )
+        ),
+        Positioned(
+          bottom: screenSize.height * 0.25,
+          left: screenSize.width * 0.5,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.9), heigh: screenSize.width * 0.6, width: screenSize.width * 0.4 )
+        ),
+        Positioned(
+          bottom: screenSize.height * 0.45,
+          right: screenSize.width * 0.25,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.3), heigh: screenSize.width * 0.3, width: screenSize.width * 0.8 )
+        ),
+      ],
+    );
+  }
+
+  
+}
+
+class Rectangulo extends StatelessWidget {
+final Color color;
+final heigh;
+final width;
+
+const Rectangulo({
+  Key key,
+  this.color = Colors.blue,
+  this.heigh = 70,
+  this.width = 70,
+}) : super(key: key);
+
+    @override
+    Widget build(BuildContext context) {
+
+    return Container(
+       width: this.width,
+       height: this.heigh,
+       decoration: BoxDecoration(
+         color: this.color,
+         borderRadius: BorderRadius.circular(10.0)
+       ),
+     );
+   }
+}
+

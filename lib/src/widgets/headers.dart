@@ -605,7 +605,7 @@ class HeaderFondoRectangulos extends StatelessWidget {
         Positioned(
           top: screenSize.height * 0.1,
           right: screenSize.width * 0.35,
-          child: Rectangulo( color: Colors.blue.withOpacity(0.8), heigh: screenSize.width * 0.24, width: screenSize.width * 0.4 )
+          child: Rectangulo( color: Colors.blue.withOpacity(0.75), heigh: screenSize.width * 0.24, width: screenSize.width * 0.4 )
         ),
         Positioned(
           bottom: -screenSize.height * 0.05,
@@ -620,12 +620,37 @@ class HeaderFondoRectangulos extends StatelessWidget {
         Positioned(
           bottom: screenSize.height * 0.25,
           left: screenSize.width * 0.5,
-          child: Rectangulo( color: Colors.blue.withOpacity(0.9), heigh: screenSize.width * 0.6, width: screenSize.width * 0.4 )
+          child: Rectangulo( color: Colors.blue.withOpacity(0.75), heigh: screenSize.width * 0.6, width: screenSize.width * 0.4 )
         ),
         Positioned(
           bottom: screenSize.height * 0.45,
           right: screenSize.width * 0.25,
           child: Rectangulo( color: Colors.blue.withOpacity(0.3), heigh: screenSize.width * 0.3, width: screenSize.width * 0.8 )
+        ),
+        Positioned(
+          top: screenSize.height * 0.2,
+          right: -screenSize.width * 0.35,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.75), heigh: screenSize.width * 0.35, width: screenSize.width * 0.6 )
+        ),
+        Positioned(
+          bottom: screenSize.height * 0.1,
+          right: -screenSize.width * 0.1,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.2), heigh: screenSize.width * 0.55, width: screenSize.width * 0.4 )
+        ),
+        Positioned(
+          top: 0.0,
+          left: 0.0,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.3), heigh: screenSize.width * 0.2, width: screenSize.width * 0.2 )
+        ),
+        Positioned(
+          bottom: screenSize.height * 0.03,
+          right: screenSize.width * 0.35,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.4), heigh: screenSize.width * 0.40, width: screenSize.width * 0.45 )
+        ),
+        Positioned(
+          top: screenSize.height * 0.12,
+          left: screenSize.width * 0.03,
+          child: Rectangulo( color: Colors.blue.withOpacity(0.5), heigh: screenSize.width, width: screenSize.width * 0.2 )
         ),
       ],
     );
